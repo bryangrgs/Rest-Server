@@ -15,8 +15,8 @@ const dbConnection= async () => {
         // useFindAndModify: false
        });
        console.log('Base de datos online');
-    }catch(err){
-        console.log(err);
+    }catch(Error){
+        console.log(Error);
         throw new err('Error a la hora de iniciar la base de datos');
     }
 }
